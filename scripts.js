@@ -52,6 +52,7 @@ function loadPicture(array) {
 function isVisible(elem) {
 
     const coords = elem.getBoundingClientRect();
+    console.log(coords);
 
     const  windowHeight = document.documentElement.clientHeight;
 
@@ -65,7 +66,7 @@ function showVisible() {
     let imgs = document.getElementsByTagName('img');
     let sources = document.getElementsByTagName('source');
 
-    if(window.innerWidth > 780) {
+    if(window.innerWidth > 768) {
 
         for (let i = 0; i < sources.length; i++) {
             let source = sources[i];
